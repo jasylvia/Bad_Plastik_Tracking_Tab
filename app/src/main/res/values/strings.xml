@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Bad Plastik Tracking</string>
+    <string name="default_total">$0.00</string>
+    <string name="change_1">$1.00</string>
+    <string name="change_5">$5.00</string>
+    <string name="change_10">$10.00</string>
+    <string name="change_penn">$0.01</string>
+    <string name="change_nick">$0.05</string>
+    <string name="change_dime">$0.10</string>
+
+    <string name="add">Add amount</string>
+    <string name="sub">Subtract amount</string>
+</resources>
