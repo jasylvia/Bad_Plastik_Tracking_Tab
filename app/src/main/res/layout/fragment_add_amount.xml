@@ -3,9 +3,10 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
     <TextView android:text="@string/default_total" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="78dp"
         android:id="@+id/cardTotal1"
         android:textSize="60sp"
+        android:layout_marginBottom="71dp"
+        android:layout_above="@+id/change1"
         android:layout_centerHorizontal="true" />
 
     <Button

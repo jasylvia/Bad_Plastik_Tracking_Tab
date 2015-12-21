@@ -20,6 +20,4 @@ public class AddAmountFragment extends Fragment {
         cashView.setText(balance);
         return rootView;
     }
-
-
 }
