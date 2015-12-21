@@ -5,94 +5,150 @@
         android:layout_height="wrap_content"
         android:id="@+id/cardTotal2"
         android:textSize="60sp"
-        android:layout_above="@+id/change1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="71dp" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:stateListAnimator="@anim/my_animator"
-        android:backgroundTint="@color/mat_orange"
-        android:text="@string/change_1"
-        android:textColor="@color/white"
-        android:id="@+id/change1"
-        android:onClick="subCash"
-        android:textSize="20sp"
-        android:padding="20dip"
-        android:layout_above="@+id/changeDime"
-        android:layout_toStartOf="@+id/change5" />
+        android:layout_marginTop="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:stateListAnimator="@anim/my_animator"
-        android:backgroundTint="@color/mat_orange"
-        android:text="@string/change_5"
-        android:textColor="@color/white"
-        android:id="@+id/change5"
-        android:onClick="subCash"
-        android:textSize="20sp"
-        android:padding="20dip"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:text="@string/default_total"
+        android:id="@+id/oldTotal01"
+        android:textSize="40sp"
+        android:alpha="0.8"
+        android:layout_below="@+id/cardTotal2"
+        android:layout_alignEnd="@+id/cardTotal2" />
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:stateListAnimator="@anim/my_animator"
-        android:backgroundTint="@color/mat_orange"
-        android:text="@string/change_10"
-        android:textColor="@color/white"
-        android:id="@+id/change10"
-        android:layout_alignTop="@+id/change5"
-        android:onClick="subCash"
-        android:textSize="20sp"
-        android:paddingTop="20dip"
-        android:paddingBottom="20dip"
-        android:paddingLeft="10dip"
-        android:paddingRight="10dip"
-        android:layout_alignEnd="@+id/changeDime"
-        android:layout_toEndOf="@+id/change5" />
+        android:text="@string/default_total"
+        android:id="@+id/oldTotal02"
+        android:textSize="30sp"
+        android:alpha="0.6"
+        android:layout_below="@+id/oldTotal01"
+        android:layout_alignEnd="@+id/cardTotal2" />
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:stateListAnimator="@anim/my_animator"
-        android:backgroundTint="@color/mat_orange"
-        android:text="@string/change_penn"
-        android:textColor="@color/white"
-        android:id="@+id/changePenn"
-        android:onClick="subCash"
+        android:text="@string/default_total"
+        android:id="@+id/oldTotal03"
         android:textSize="20sp"
-        android:padding="20dip"
-        android:layout_alignTop="@+id/changeNick"
-        android:layout_toStartOf="@+id/changeNick" />
+        android:alpha="0.4"
+        android:layout_below="@+id/oldTotal02"
+        android:layout_alignEnd="@+id/cardTotal2" />
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:stateListAnimator="@anim/my_animator"
-        android:backgroundTint="@color/mat_orange"
-        android:text="@string/change_nick"
-        android:textColor="@color/white"
-        android:id="@+id/changeNick"
-        android:onClick="subCash"
-        android:textSize="20sp"
-        android:padding="20dip"
-        android:layout_below="@+id/change1"
-        android:layout_toEndOf="@+id/change1" />
+        android:text="@string/default_total"
+        android:id="@+id/oldTotal04"
+        android:textSize="15sp"
+        android:alpha="0.2"
+        android:layout_below="@+id/oldTotal03"
+        android:layout_alignEnd="@+id/cardTotal2" />
 
-    <Button
+    <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:stateListAnimator="@anim/my_animator"
-        android:backgroundTint="@color/mat_orange"
-        android:text="@string/change_dime"
-        android:textColor="@color/white"
-        android:id="@+id/changeDime"
-        android:onClick="subCash"
-        android:textSize="20sp"
-        android:padding="20dip"
-        android:layout_below="@+id/change5"
-        android:layout_toEndOf="@+id/change5" />
+        android:stretchColumns="0, 1, 2"
+        android:id="@+id/tableLayout2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:stateListAnimator="@anim/my_animator"
+                android:backgroundTint="@color/mat_orange"
+                android:text="@string/change_1"
+                android:textColor="@color/white"
+                android:id="@+id/change1"
+                android:onClick="subCash"
+                android:textSize="20sp"
+                android:padding="20dip"
+                android:layout_column="0" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:stateListAnimator="@anim/my_animator"
+                android:backgroundTint="@color/mat_orange"
+                android:text="@string/change_5"
+                android:textColor="@color/white"
+                android:id="@+id/change5"
+                android:onClick="subCash"
+                android:textSize="20sp"
+                android:padding="20dip"
+                android:layout_column="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:stateListAnimator="@anim/my_animator"
+                android:backgroundTint="@color/mat_orange"
+                android:text="@string/change_10"
+                android:textColor="@color/white"
+                android:id="@+id/change10"
+                android:onClick="subCash"
+                android:textSize="20sp"
+                android:paddingTop="20dip"
+                android:paddingBottom="20dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:layout_column="2" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:stateListAnimator="@anim/my_animator"
+                android:backgroundTint="@color/mat_orange"
+                android:text="@string/change_penn"
+                android:textColor="@color/white"
+                android:id="@+id/changePenn"
+                android:onClick="subCash"
+                android:textSize="20sp"
+                android:padding="20dip"
+                android:layout_column="0" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:stateListAnimator="@anim/my_animator"
+                android:backgroundTint="@color/mat_orange"
+                android:text="@string/change_nick"
+                android:textColor="@color/white"
+                android:id="@+id/changeNick"
+                android:onClick="subCash"
+                android:textSize="20sp"
+                android:padding="20dip"
+                android:layout_column="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:stateListAnimator="@anim/my_animator"
+                android:backgroundTint="@color/mat_orange"
+                android:text="@string/change_dime"
+                android:textColor="@color/white"
+                android:id="@+id/changeDime"
+                android:onClick="subCash"
+                android:textSize="20sp"
+                android:padding="20dip"
+                android:layout_column="2" />
+
+        </TableRow>
+    </TableLayout>
+
 </RelativeLayout>
